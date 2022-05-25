@@ -1,0 +1,51 @@
+@use "custom";
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+}
+.btn {
+  border-radius: 15px;
+}
+.btn-reg {
+  color: hsl(0, 0%, 41%);
+  border: 1px solid hsl(0, 0%, 41%);
+}
+.btn-reg:hover {
+  border: 1px solid #000;
+}
+.nav-item {
+  margin-inline: 1rem;
+}
+.hero-img {
+  height: 90vh;
+}
+.dropdown-menu {
+  box-shadow: 0 1rem 3rem rgba(#000, 0.175);
+}
+.btn-dark {
+  margin-right: auto;
+}
+@media (max-width: 992px) {
+  .dropdown-menu {
+    box-shadow: none;
+  }
+}
+@media (max-width: 575px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .btn-dark {
+    margin-inline: auto;
+  }
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
